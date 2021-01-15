@@ -1,0 +1,8 @@
+./run:main.o projectlib.o projectio.o
+	gcc -o run main.o projectlib.o projectio.o -lm
+main.o:main.c projectio.h
+	gcc -c main.c
+projectlib.o:projectlib.c projectlib.h
+	gcc -c projectlib.c
+projectio.o:projectio.c projectlib.h projectio.h
+	gcc -c projectio.c
