@@ -22,7 +22,7 @@ void main()
 	  			exit(-1);
 	  		}
 			printf("\n\t\t\t\t\tEnter a user name:");
-			scanf("%s",&username);
+			scanf("%s",username);
 			while(!feof(fp))
 			{		
 				fscanf(fp, "%s %d",user,&total_score); /*read from file*/
