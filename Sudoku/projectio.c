@@ -319,6 +319,7 @@ void menu()
 					break;
 				case '2':
 					system("clear");
+					count = 0;
 					problem_table=(sudoku_type**)malloc(dimension*sizeof(sudoku_type *));
 					for(i=0;i<dimension;i++)
 						problem_table[i]=(sudoku_type*)malloc(dimension*sizeof(sudoku_type));

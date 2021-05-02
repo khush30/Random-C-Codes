@@ -11,7 +11,7 @@
 #define MAX 10
 
 char username[20];
-int total_score = 0;
+int total_score;
 
 typedef struct
 {
