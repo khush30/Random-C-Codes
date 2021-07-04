@@ -1,0 +1,7 @@
+./run: 2059main.o 2059functions.o
+	gcc -o run 2059main.o 2059functions.o 
+2059main.o: 2059main.c 2059functions.h
+	gcc -c 2059main.c
+2059functions.o: 2059functions.c 2059functions.h
+	gcc -c 2059functions.c
+
