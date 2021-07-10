@@ -1,0 +1,6 @@
+./tree:bstmain.o bstfunctions.o
+	gcc -o tree bstmain.o bstfunctions.o
+bstmain.o:bstmain.c bstfunctions.h
+	gcc -c bstmain.c
+bstfunctions.o:bstfunctions.c bstfunctions.h
+	gcc -c bstfunctions.c

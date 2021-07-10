@@ -1,0 +1,6 @@
+./run:1851_poly_add_main.o poly_functions.o
+	gcc -o run 1851_poly_add_main.o poly_functions.o
+1851_poly_add_main.o:1851_poly_add_main.c poly_functions.h
+	gcc -c 1851_poly_add_main.c
+poly_functions.o:poly_functions.c poly_functions.h
+	gcc -c poly_functions.c

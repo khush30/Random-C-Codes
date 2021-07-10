@@ -1,0 +1,6 @@
+./heap:1851_heap_main.o heapFunctions.o
+	gcc -o heap 1851_heap_main.o heapFunctions.o -lm
+1851_heap_main.o:1851_heap_main.c heapFunctions.h
+	gcc -c 1851_heap_main.c
+heapFunctions.o:heapFunctions.c heapFunctions.h
+	gcc -c heapFunctions.c

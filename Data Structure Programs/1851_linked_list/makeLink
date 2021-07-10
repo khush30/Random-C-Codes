@@ -1,0 +1,6 @@
+./run:linked.o linkedList.o
+	gcc -o run linked.o linkedList.o
+linked.o:linked.c linkedList.h
+	gcc -c linked.c
+linkedList.o:linkedList.c linkedList.h
+	gcc -c linkedList.c

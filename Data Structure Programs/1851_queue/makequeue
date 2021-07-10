@@ -1,0 +1,6 @@
+./q:1851_queue.o queue_functions.o
+	gcc -o q 1851_queue.o queue_functions.o
+1851_queue.o:1851_queue.c queue_functions.h
+	gcc -c 1851_queue.c
+queue_functions.o:queue_functions.c queue_functions.h
+	gcc -c queue_functions.c

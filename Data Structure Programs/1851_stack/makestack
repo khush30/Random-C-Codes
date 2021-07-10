@@ -1,0 +1,6 @@
+./run:1851_stack_main.o stack_functions.o
+	gcc -o run 1851_stack_main.o stack_functions.o
+1851_stack_main.o:1851_stack_main.c stack_functions.h
+	gcc -c 1851_stack_main.c
+stack_functions.o:stack_functions.c stack_functions.h
+	gcc -c stack_functions.c
